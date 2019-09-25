@@ -1,0 +1,49 @@
+.error {
+  color: red;
+}
+.form-group {
+  display: flex;
+  margin-bottom: 5px;
+}
+.form-label {
+  flex: 1;
+}
+.form-input {
+  flex: 2;
+}
+.login-inputs {
+  width: 330px;
+}
+.login-inputs input {
+  width: 100%;
+}
+.navbar {
+  width: 360px;
+  display: flex;
+  justify-content: space-between
+}
+.navbar-logout-button {
+  display:inline-block;
+  margin-left: 20px;
+}
+.profile-container {
+  border: 1px solid gray;
+  margin-top: 30px;
+  padding: 10px;
+  width: 340px;
+}
+.profile-header {
+  margin: 0;
+}
+.payment-form {
+  border: 1px solid gray;
+  margin-top: 20px;
+  padding: 10px;
+  width: 340px;
+}
+.payment-header {
+  margin-top: 0;
+}
+.form-button {
+  margin-top: 10px;
+}
