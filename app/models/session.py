@@ -10,7 +10,7 @@ class Session(Base):
     __tablename__ = "sessions"
 
     username = Column(String, primary_key=True)
-    id = Column(Integer)
+    id = Column(String)
 
     def get_id(self):
         return self.id
@@ -20,7 +20,10 @@ class Session(Base):
 
 
 def create_session(db, username):
-    session = Session(username=username, id=getrandbits(32))
+    session = Session(
+        username=username,
+        id=getrandbits(128).to_bytes(16, byteorder='little').hex(),
+    )
     db.add(session)
     return session
 

@@ -49,7 +49,7 @@ def do_login(db):
         if existing_session is not None:
             delete_session(db, existing_session)
         session = create_session(db, username)
-        response.set_cookie("session", str(session.get_id()))
+        response.set_cookie("session", session.get_id())
         return redirect("/profile/{}".format(username))
     return template("login", login_error=error)
 
