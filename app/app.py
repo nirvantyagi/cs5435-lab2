@@ -21,7 +21,6 @@ def run_server():
     session = Session()
 
     register_users(session)
-    load_breaches(session)
 
     session.commit()
     session.close()

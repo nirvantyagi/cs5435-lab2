@@ -9,7 +9,7 @@ from bottle import (
 from app.models.session import logged_in
 from app.models.user import get_user
 
-@get("/profile/<username>")
+@get("/profile/<username:path>")
 @logged_in
 def profile(db, session, username):
     user = get_user(db, username)
