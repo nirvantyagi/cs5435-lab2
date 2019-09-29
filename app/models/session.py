@@ -43,7 +43,7 @@ def delete_session(db, session):
 def logged_in(f):
     def wrapper(db, *args, **kwargs):
         sess_id = request.get_cookie("session")
-        session = get_session(db, int(sess_id)) if (sess_id is not None) else None
+        session = get_session(db, sess_id) if (sess_id is not None) else None
         if session is None:
             return redirect("/login")
         kwargs["session"] = session
