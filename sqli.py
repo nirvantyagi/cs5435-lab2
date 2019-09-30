@@ -26,7 +26,7 @@ def sqli_attack(username):
     pass
 
 def main():
-    sqli_attack("victim")
+    sqli_attack("admin")
 
 if __name__ == "__main__":
     main()
