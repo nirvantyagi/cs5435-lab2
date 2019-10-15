@@ -38,4 +38,3 @@ def update_aboutme(db, session):
         user=user,
         session_user=user,
     )
-

